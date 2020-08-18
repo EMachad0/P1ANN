@@ -1,6 +1,6 @@
 from math import *
 
-def bissection(funcao, intervalo, n = 10): # intervalo]
+def bissection(funcao, intervalo, n = 10):
     # função
     global f
     def f(x):
