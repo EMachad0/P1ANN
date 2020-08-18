@@ -1,8 +1,8 @@
-from sympy import *
+import sympy as sp
 from math import *
 
 def newton(funcao, x0, n = 10):
-    derivada = str(diff(funcao, "x", 1))
+    derivada = str(sp.diff(funcao, "x", 1))
     # print(derivada)
 
     # uma função qualquer
