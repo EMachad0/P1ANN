@@ -1,13 +1,13 @@
 from math import *
 
-def bissection(funcao, intervalo): # intervalo
+def bissection(funcao, intervalo, n = 10): # intervalo]
     # função
+    global f
     def f(x):
         return eval(funcao)
 
     # método da bisseção
     l, r = intervalo
-    n = 10 # número de iterações
     itr = [0]
 
     for i in range(n):
@@ -20,11 +20,7 @@ def bissection(funcao, intervalo): # intervalo
             l = m
         itr.append(m)
 
-    print(f"Aproximação da raiz de f no intervalo [{intervalo[0]}, {intervalo[1]}] é")
-    print("|itr | m | f(m)|")
-    print("|----|---|-----|")
-    for i in range(1, n+1):
-        print(f"|{i} | {itr[i]} | {f(itr[i])}|")
+    return itr
 
 funcoes = ["x**5 - 8*x - 2", #1
     "cos(x**2) - x", #2
@@ -39,7 +35,12 @@ funcoes = ["x**5 - 8*x - 2", #1
 
 intervalos = [(-5, 5), (-5, 5), (0.1, 5), (0.1, 5), (-5, 5), (-5, 5), (0.1, 5), (-5, 5), (-5, 5), (-5, 5)]
 
-for i in range(10): #questoes
+for i in range(len(funcoes)): #questoes
     print(f"### Questao {i+1}:")
-    bissection(funcoes[i], intervalos[i])
+    itr = bissection(funcoes[i], intervalos[i])
+    print(f"Aproximação da raiz de f no intervalo {intervalos[i]} é")
+    print("|itr | m | f(m)|")
+    print("|----|---|-----|")
+    for i in range(1, len(itr)):
+        print(f"|{i} | {itr[i]} | {f(itr[i])}|")
     print()

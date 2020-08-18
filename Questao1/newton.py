@@ -1,21 +1,18 @@
 from sympy import *
 from math import *
 
-def newton(funcao, x0):
-    x = symbols("x")
+def newton(funcao, x0, n = 10):
     derivada = str(diff(funcao, "x", 1))
     # print(derivada)
 
     # uma função qualquer
+    global f
     def f(x):
         return eval(funcao)
 
     # derivada de f
     def df(x):
         return eval(derivada)
-
-    # ponto inicial
-    n = 10 # numero de iterações
 
     itr = [x0]
     for i in range(1, n+1):
@@ -24,11 +21,7 @@ def newton(funcao, x0):
         if f(x0) == 0:
             break
 
-    print(f"Aproximação da raiz de f é")
-    print("|itr | xi | f(xi)|")
-    print("|----|----|------|")
-    for i in range(len(itr)):
-        print(f"|{i} | {itr[i]} | {f(itr[i])}|")
+    return itr
 
 funcoes = ["x**5 - 8*x - 2", #1
     "cos(x**2) - x", #2
@@ -41,7 +34,12 @@ funcoes = ["x**5 - 8*x - 2", #1
     "2*cos(e**x)-x", #9
     "x**3 + x**2 + 0.001"] #10
 
-for i in range(10): #questoes
+for i in range(len(funcoes)): #questoes
     print(f"### Questao {i+1}:")
-    newton(funcoes[i], 1)
+    itr = newton(funcoes[i], 1)
+    print(f"Aproximação da raiz de f é")
+    print("|itr | xi | f(xi)|")
+    print("|----|----|------|")
+    for i, xi in enumerate(itr):
+        print(f"|{i} | {xi} | {f(xi)}|")
     print()
