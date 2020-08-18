@@ -33,12 +33,12 @@ funcoes = ["x**5 - 8*x - 2", #1
     "2*cos(e**x)-x", #9
     "x**3 + x**2 + 0.001"] #10
 
-intervalos = [(-5, 5), (-5, 5), (0.1, 5), (0.1, 5), (-5, 5), (-5, 5), (0.1, 5), (-5, 5), (-5, 5), (-5, 5)]
+intervalos = [(-5, 5), (-5, 5), (0.1, 5), (0.1, 5), (-5, 5), (-5, 5), (0.1, 5), (0, 1), (-5, 5), (-5, 5)]
 
 for i in range(len(funcoes)): #questoes
     print(f"### Questao {i+1}:")
     itr = bissection(funcoes[i], intervalos[i])
-    print(f"Aproximação da raiz de f no intervalo {intervalos[i]} é")
+    print(f"Aproximação da raiz de f pelo método da bisseção no intervalo {intervalos[i]} é")
     print("|itr | m | f(m)|")
     print("|----|---|-----|")
     for i in range(1, len(itr)):

@@ -37,7 +37,7 @@ funcoes = ["x**5 - 8*x - 2", #1
 for i in range(len(funcoes)): #questoes
     print(f"### Questao {i+1}:")
     itr = newton(funcoes[i], 1)
-    print(f"Aproximação da raiz de f é")
+    print(f"Aproximação da raiz de f pelo método de Newton é")
     print("|itr | xi | f(xi)|")
     print("|----|----|------|")
     for i, xi in enumerate(itr):
