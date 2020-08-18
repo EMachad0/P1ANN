@@ -8,6 +8,7 @@ def bissection(funcao, intervalo): # intervalo
     # método da bisseção
     l, r = intervalo
     n = 10 # número de iterações
+    itr = [0]
 
     for i in range(n):
         m = (l + r) / 2
@@ -17,17 +18,21 @@ def bissection(funcao, intervalo): # intervalo
             r = m
         else:
             l = m
+        itr.append(m)
 
-    print(f"Aproximação de {funcao} é {m} tq")
-    print(f"f({m}) = {f(m)}")
+    print(f"Aproximação da raiz de f no intervalo [{intervalo[0]}, {intervalo[1]}] é")
+    print("|itr | m | f(m)|")
+    print("|----|---|-----|")
+    for i in range(1, n+1):
+        print(f"|{i} | {itr[i]} | {f(itr[i])}|")
 
 funcoes = ["x**5 - 8*x - 2", #1
     "cos(x**2) - x", #2
     "log(x) + x**2", #3
     "log(x**2) + 2*x", #4
     "cos(sin(x**2)) + x**3 - 2", #5 
-    "pow(e, -x**2) - x**2 + 5", #6
-    "pow(e, cos(x)) + log(x**2)", #7
+    "e**(-x**2) - x**2 + 5", #6
+    "e**(cos(x)) + log(x**2)", #7
     "x**2 * cos(x) + x -1", #8
     "2*cos(e**x)-x", #9
     "x**3 + x**2 + 0.001"] #10
@@ -35,6 +40,6 @@ funcoes = ["x**5 - 8*x - 2", #1
 intervalos = [(-5, 5), (-5, 5), (0.1, 5), (0.1, 5), (-5, 5), (-5, 5), (0.1, 5), (-5, 5), (-5, 5), (-5, 5)]
 
 for i in range(10): #questoes
-    print(f"Questao {i+1}:")
+    print(f"### Questao {i+1}:")
     bissection(funcoes[i], intervalos[i])
     print()
