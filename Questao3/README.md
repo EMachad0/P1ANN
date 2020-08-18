@@ -4,6 +4,8 @@
 
 ## Método da eliminação de Gauss
 
+[Algoritmo](https://github.com/EMachad0/P1ANN/blob/master/Questao3/gauss.py)
+
 ### Questão 1:
 Operaçoes:
 L1 = L1 -0.5 * L0
@@ -33,6 +35,9 @@ L2 = L2 -0.7692307692307693 * L1
 Solução = [1.0, -1.0, -0.9999999999999998]
 
 ## Método iterativo de Jacobi
+
+[Algoritmo](https://github.com/EMachad0/P1ANN/blob/master/Questao3/jacobi.py)
+
 ### Questão 1:
 Método de jacobi com chute inicial = [0, 0, 0]
 |itr | x | y | z|
@@ -98,6 +103,9 @@ Método de jacobi com chute inicial = [0, 0, 0]
 |10| 0.9986088721707818| -0.9987545344650205| -0.9992570460390947|
 
 ## Método iterativo de Gauss-Seidel
+
+[Algoritmo](https://github.com/EMachad0/P1ANN/blob/master/Questao3/seidel.py)
+
 ### Questão 1:
 Método de Seidel com chute inicial = [0, 0, 0]
 |itr | x | y | z|
