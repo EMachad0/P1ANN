@@ -7,9 +7,9 @@ def secante(funcao, x0, x1, n = 10):
         return eval(funcao)
 
     # a raiz NAO precisa estar dentro do intervalo
-    itr = [x0, x1]
-
     a, b = x0, x1
+
+    itr = [x0, x1]
     for i in range(2, n+1):
         try:
             # a - f(a) / ((f(b) - f(a))/ (b - a))

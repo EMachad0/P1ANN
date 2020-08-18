@@ -13,7 +13,7 @@ def bissection(funcao, intervalo, n = 10):
     for i in range(n):
         m = (l + r) / 2
         if f(m) == 0:
-            print('A raiz é:', m)
+            break
         elif f(l) * f(m) < 0: # teorema de Bolzano
             r = m
         else:
