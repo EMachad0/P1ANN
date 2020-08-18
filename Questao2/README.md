@@ -2,8 +2,11 @@
 
 ## 2)
 
+Aproximação da raiz de f pelo método do ponto fixo
+[Algoritmo](https://github.com/EMachad0/P1ANN/blob/master/Questao2/pontofixo.py)
+
 ### Questao 1:
-Aproximação da raiz de f pelo método do ponto fixo no intervalo (2, 3) com x0 = 0.5 é
+Intervalo (2, 3) com x0 = 0.5
 |itr | x | g(x) | f(x)|
 |----|---|------|-----|
 |0 | 0.5 | 7.25 | -6.75|
@@ -19,7 +22,7 @@ Aproximação da raiz de f pelo método do ponto fixo no intervalo (2, 3) com x0
 |10 | 2.6457513110645907 | 2.6457513110645907 | 8.881784197001252e-16|
 
 ### Questao 2:
-Aproximação da raiz de f pelo método do ponto fixo no intervalo (2, 3) com x0 = 0.5 é
+Intervalo (2, 3) com x0 = 0.5
 |itr | x | g(x) | f(x)|
 |----|---|------|-----|
 |0 | 0.5 | 22.25 | -10.875|
@@ -35,7 +38,7 @@ Aproximação da raiz de f pelo método do ponto fixo no intervalo (2, 3) com x0
 |10 | 2.2279092153717617 | 2.2220259161225107 | 0.0584044467617062|
 
 ### Questao 3:
-Aproximação da raiz de f pelo método do ponto fixo no intervalo (2, 2.5) com x0 = 0.25 é
+Intervalo (2, 2.5) com x0 = 0.25
 |itr | x | g(x) | f(x)|
 |----|---|------|-----|
 |0 | 0.25 | 6.6332495807108 | -10.984375|
@@ -51,7 +54,7 @@ Aproximação da raiz de f pelo método do ponto fixo no intervalo (2, 2.5) com 
 |10 | 2.219238360830697 | 2.226354753363341 | -0.07020912446026628|
 
 ### Questao 4:
-Aproximação da raiz de f pelo método do ponto fixo no intervalo (2, 3) com x0 = 0.5 é
+Intervalo (2, 3) com x0 = 0.5
 |itr | x | g(x) | f(x)|
 |----|---|------|-----|
 |0 | 0.5 | 15.0 | -10.875|
@@ -67,7 +70,7 @@ Aproximação da raiz de f pelo método do ponto fixo no intervalo (2, 3) com x0
 |10 | 2.2239800905693174 | 2.2239800905693157 | 2.842170943040401e-14|
 
 ### Questao 5:
-Aproximação da raiz de f pelo método do ponto fixo no intervalo (1, 2) com x0 = 0.5 é
+Intervalo (1, 2) com x0 = 0.5
 |itr | x | g(x) | f(x)|
 |----|---|------|-----|
 |0 | 0.5 | 0.6931471805599453 | -0.3512787292998718|
@@ -83,7 +86,7 @@ Aproximação da raiz de f pelo método do ponto fixo no intervalo (1, 2) com x0
 |10 | 1.2506645006179395 | 1.2531426110608315 | -0.00866593795147974|
 
 ### Questao 6:
-Aproximação da raiz de f pelo método do ponto fixo no intervalo (1, 2) com x0 = 0.5 é
+Intervalo (1, 2) com x0 = 0.5
 |itr | x | g(x) | f(x)|
 |----|---|------|-----|
 |0 | 0.5 | 1.6509636244473134 | -4.375|
@@ -99,7 +102,7 @@ Aproximação da raiz de f pelo método do ponto fixo no intervalo (1, 2) com x0
 |10 | 1.7963219030628694 | 1.796321903239135 | -1.7063088719737607e-09|
 
 ### Questao 7:
-Aproximação da raiz de f pelo método do ponto fixo no intervalo (1, 2) com x0 = 0.5 é
+Intervalo (1, 2) com x0 = 0.5
 |itr | x | g(x) | f(x)|
 |----|---|------|-----|
 |0 | 0.5 | 1.5137000520175454 | -5.1875|
@@ -115,7 +118,7 @@ Aproximação da raiz de f pelo método do ponto fixo no intervalo (1, 2) com x0
 |10 | 1.6707147424429405 | 1.6707147662384487 | -4.438762406522301e-07|
 
 ### Questao 8:
-Aproximação da raiz de f pelo método do ponto fixo no intervalo (2, 3) com x0 = 0.5 é
+Intervalo (2, 3) com x0 = 0.5
 |itr | x | g(x) | f(x)|
 |----|---|------|-----|
 |0 | 0.5 | 2.2397127693021015 | 3.479425538604203|
