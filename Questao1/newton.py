@@ -25,9 +25,9 @@ def newton(funcao, x0):
             break
 
     print(f"Aproximação da raiz de f é")
-    print("|itr | m | f(m)|")
-    print("|----|---|-----|")
-    for i in range(1, len(itr)):
+    print("|itr | xi | f(xi)|")
+    print("|----|----|------|")
+    for i in range(len(itr)):
         print(f"|{i} | {itr[i]} | {f(itr[i])}|")
 
 funcoes = ["x**5 - 8*x - 2", #1
