@@ -1,8 +1,8 @@
 # Eliton Machado da Silva
 
-## 6)
+## 7)
 
-[Algoritmo](https://github.com/EMachad0/P1ANN/blob/master/Questao6/spline.py) spline
+[Algoritmo](https://github.com/EMachad0/P1ANN/blob/master/Questao7/spline.py) spline
 
 ### Questão 1:
 @import "./plots/questao1.png"
